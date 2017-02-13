@@ -1,0 +1,25 @@
+first we declare four lists for storing prime numbers 
+in the first list the first number is initialized to 2
+we declre a number (say init) initialized to 2 to loop through
+then a for loop to loop till one million to find and store prime numbers
+	within the for loop we increament number by 2 and we devide it by
+		if number is 2 digits long then
+			by every number numbers less then one third of that number in first list
+			and if divided successfully, break the for loop
+			if not then add it to first list
+		if number is 3 or 4 digit long then 
+			by every number number less than one tenth of that number in second list and first list
+			and if divided successfully, break the for loop
+			if not then add it to second list
+		if number is 5 or 6 digit long then 
+			by every number number less than one hundreth of that number in the third list and second list
+			and if divided successfully, break the for loop
+			if not then add it to third list
+		/*
+		we will never have seven digit long number because one million is upper bound
+		if number is 7 digit long then 
+			by every number number less than one thousandth of that number from fourth list and third list
+			and if divided successfully, break the for loop 
+			if not then add it to fourth list
+  		*/
+
