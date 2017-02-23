@@ -19,9 +19,9 @@ public class Problem_50 {
         int init=10;
         for(int i=0;i<1000000;i++){
             int length=(int)Math.log10(init) + 1;
-            switch (init) {
-                case 1:
-                    length = 2;
+            switch (length) {
+                case 2:
+                    //length = 2;
 
                     for (int j = 0; j < init / 3; j++) {
                         if (init % listOfTwoDigitLongNums.get(j) == 0) {
@@ -42,9 +42,9 @@ public class Problem_50 {
                     init = init + 1;
                     ifNumberIsAddedOnce = 0;
                     break;
-                case 2:
+                case 3:
 
-                    length = 3;
+                    //length = 3;
                 {
                     for (int j = 0; j < init / 10; j++) {
                         if (init % listOfThreeAndFourDigitLongNums.get(j) == 0) {
@@ -64,8 +64,8 @@ public class Problem_50 {
                 init = init + 1;
                 ifNumberIsAddedOnce = 0;
                 break;
-                case 3:
-                    length = 4;
+                case 4:
+                    //length = 4;
                     for (int j = 0; j < init / 10; j++) {
                         if (init % listOfThreeAndFourDigitLongNums.get(j) == 0) {
                             ifNumberIsAddedOnce = 0;
@@ -83,8 +83,8 @@ public class Problem_50 {
                     init = init + 1;
                     ifNumberIsAddedOnce = 0;
                     break;
-                case 4:
-                    length = 5;
+                case 5:
+                    //length = 5;
                     for (int j = 0; j < init / 100; j++) {
                         if (init % listOfFiveAndSixDigitLongNums.get(j) == 0) {
                             ifNumberIsAddedOnce = 0;
@@ -102,8 +102,8 @@ public class Problem_50 {
                     init = init + 1;
                     ifNumberIsAddedOnce = 0;
                     break;
-                case 5:
-                    length = 6;
+                case 6:
+                    //length = 6;
                     for (int j = 0; j < init / 100; j++) {
                         if (init % listOfFiveAndSixDigitLongNums.get(j) == 0) {
                             ifNumberIsAddedOnce = 0;
